@@ -15,7 +15,7 @@ router.get("/api/posts", (req, res) => {
     });
 });
 
-router.get("/api/post/:id", (req, res) => {
+router.get("/api/posts/:id", (req, res) => {
   Posts.findById(req.params.id)
     .then((posts) => {
       if (posts) {
